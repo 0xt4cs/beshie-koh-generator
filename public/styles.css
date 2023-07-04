@@ -7,7 +7,7 @@ body {
   background-color: #c9cebd;
 }
 header {
-  margin-bottom: 28vh;
+  margin-bottom: 25vh;
   font-size: x-large;
   font-weight: bold;
 }
@@ -21,7 +21,8 @@ h1 {
   border-color: #262322;
   color: #c9cebd;
   font-size: large;
-  margin-bottom: 28vh;
+  margin-bottom: 20vh;
+  margin-left: 1em;
 }
 .btn:hover {
   background-color: #838e83;
@@ -36,4 +37,15 @@ footer {
   margin-top: 25%;
   font-size: larger;
   font-weight: bold;
+  color: #322e18;
+}
+/* dark mode */
+.light-theme {
+  background-color: #c9cebd;
+  color: #322e18;
+}
+
+.dark-theme {
+  background-color: #262322;
+  color: #c9cebd;
 }
