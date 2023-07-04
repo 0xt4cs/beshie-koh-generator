@@ -21,3 +21,10 @@ Navigate to the application and enter your statement in the provided field. The 
 ## Contributor 🤸🤸🤸
 
 This project is open for contributions. Fork the project, make your improvements and submit a pull request.
+
+## Preview
+https://beshiekoh-generator.netlify.app/
+
+## License  🤸‍♂️🤸🤸‍♀️
+
+Beshie Koh Generator is [MIT licensed](./LICENSE).
