@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaGithub } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -26,6 +26,14 @@ function Footer() {
               href="https://www.instagram.com/tacssuki/"
             >
               <FaFacebook size={25} />
+            </a>
+          </li>
+          <li className="ms-3">
+            <a
+              className="text-body-secondary"
+              href="https://github.com/tacssuki"
+            >
+              <FaGithub size={25} />
             </a>
           </li>
         </ul>
