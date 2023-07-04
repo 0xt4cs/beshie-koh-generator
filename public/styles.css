@@ -1,0 +1,39 @@
+body {
+  font-family: "League Spartan", sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #c9cebd;
+}
+header {
+  margin-bottom: 28vh;
+  font-size: larger;
+  font-weight: bold;
+}
+h1 {
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+.btn {
+  margin-top: 2rem;
+  background-color: #322e18;
+  border-color: #262322;
+  color: #c9cebd;
+  font-size: large;
+  margin-bottom: 28vh;
+}
+.btn:hover {
+  background-color: #838e83;
+  color: #262322;
+}
+
+.form-control {
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 25%;
+  font-size: larger;
+  font-weight: bold;
+}
