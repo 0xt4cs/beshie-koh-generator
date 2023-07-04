@@ -1,10 +1,9 @@
 # Beshie Koh Generator 🤸🤸🤸
 
-This project is a simple ReactJS application that's designed to generate a trending joke or meme statement with the ending "Beshie Koh", adding a cartwheeling person emoji 🤸‍♂️🤸🤸‍♀️ on each spacing and before and after the statement. It's designed to allow users to effortlessly add emoji to their statements and make their jokes even more entertaining and engaging.
+This project is a simple ReactJS application that's designed to generate a cartwheeling person emoji 🤸‍♂️🤸🤸‍♀️ on each spacing and before and after the statement. It's designed to allow users to effortlessly add emoji to their statements and make their jokes even more entertaining and engaging.
 
 ## Features 🤸🤸🤸
 
-- Automatically adds "Beshie Koh" at the end of every statement.
 - Adds a cartwheeling person emoji at every spacing and before and after the statement.
 - User-friendly interface for effortless interaction.
 
