@@ -23,8 +23,7 @@ function Footer() {
           <li className="ms-3">
             <a
               className="text-body-secondary"
-              href="https://www.facebook.com/tacssuki"
-              style={{ color: `${theme.color} !important` }}
+              href="https://www.instagram.com/tacssuki/"
             >
               <FaInstagram size={25} />
             </a>
@@ -32,7 +31,7 @@ function Footer() {
           <li className="ms-3">
             <a
               className="text-body-secondary"
-              href="https://www.instagram.com/tacssuki/"
+              href="https://www.facebook.com/tacssuki"
             >
               <FaFacebook size={25} />
             </a>
