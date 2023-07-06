@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Body from "./components/Body";
 import Footer from "./components/Footer";
 import { ThemeContext, themes } from "./components/ThemeContext";
+import "./styles.css";
 
 function App() {
   const [theme, setTheme] = React.useState(themes.light);
