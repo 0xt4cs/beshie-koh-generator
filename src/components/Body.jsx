@@ -8,6 +8,7 @@ function Body({ toggleTheme }) {
   const [text, setText] = useState("");
   const emojis = ["🤸‍♂️", "🤸‍♀️", "🤸"];
   const [showModal, setShowModal] = useState(false);
+  const [showResult, setShowResult] = useState(false);
 
   const randomEmoji = () => emojis[Math.floor(Math.random() * emojis.length)];
 
@@ -18,10 +19,11 @@ function Body({ toggleTheme }) {
     <div className="container">
       <h1>
         Result: <br />
-        {generateString(text)}
+        {showResult
+          ? generateString(text)
+          : `Once done click "Submit" for Result!`}{" "}
       </h1>
       <br />
-
       {showModal && (
         <div
           className="alert alert-success"
@@ -38,6 +40,9 @@ function Body({ toggleTheme }) {
         onChange={(e) => setText(e.target.value)}
         className="form-control"
       />
+      <button className="btn" onClick={() => setShowResult(true)}>
+        Submit
+      </button>
       <CopyToClipboard
         text={generateString()}
         onCopy={() => {
