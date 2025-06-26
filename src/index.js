@@ -7,7 +7,14 @@ import { ThemeContext, themes } from "./components/ThemeContext";
 import "./styles.css";
 
 function App() {
-  const [theme, setTheme] = React.useState(themes.light);
+  const [theme, setTheme] = React.useState(() => {
+    const savedTheme = localStorage.getItem('beshie-koh-theme');
+    return savedTheme === 'dark' ? themes.dark : themes.light;
+  });
+
+  React.useEffect(() => {
+    localStorage.setItem('beshie-koh-theme', theme === themes.dark ? 'dark' : 'light');
+  }, [theme]);
 
   const toggleTheme = () =>
     setTheme(theme === themes.dark ? themes.light : themes.dark);
@@ -15,9 +22,14 @@ function App() {
   return (
     <ThemeContext.Provider value={theme}>
       <div
+        className={`app ${theme === themes.light ? 'light-theme' : 'dark-theme'}`}
         style={{
-          backgroundColor: theme.backgroundColor,
+          background: theme === themes.light 
+            ? 'linear-gradient(135deg, #c9cebd 0%, #a8b5a3 100%)' 
+            : 'linear-gradient(135deg, #2c3e50 0%, #34495e 100%)',
           color: theme.color,
+          minHeight: '100vh',
+          transition: 'all 0.3s ease'
         }}
       >
         <Header />

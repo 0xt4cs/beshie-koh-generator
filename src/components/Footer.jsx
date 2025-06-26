@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram, FaFacebook, FaGithub } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaGithub, FaHeart } from "react-icons/fa";
 import { ThemeContext } from "./ThemeContext";
 
 function Footer() {
@@ -9,42 +9,45 @@ function Footer() {
 
   return (
     <div className={`container ${themeClass}`}>
-      <footer className="d-flex flex-wrap justify-content-between align-items-center py-5 border-top">
-        <div className={`col-md-4 d-flex align-items-center ${themeClass}`}>
-          <span
-            className="mb-3 mb-md-0 text-body-secondary"
-            style={{ color: `${theme.color} !important` }}
-          >
-            © {new Date().getFullYear()} Jushtine Kylle Taculad
-          </span>
-        </div>
-
-        <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li className="ms-3">
+      <footer className="app-footer">
+        <div className="footer-content">
+          <div className="social-links">
             <a
-              className="text-body-secondary"
               href="https://www.instagram.com/tacssuki/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-link"
+              title="Instagram"
             >
-              <FaInstagram size={25} />
+              <FaInstagram />
             </a>
-          </li>
-          <li className="ms-3">
             <a
-              className="text-body-secondary"
               href="https://www.facebook.com/tacssuki"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-link"
+              title="Facebook"
             >
-              <FaFacebook size={25} />
+              <FaFacebook />
             </a>
-          </li>
-          <li className="ms-3">
             <a
-              className="text-body-secondary"
-              href="https://github.com/tacssuki"
+              href="https://github.com/0xt4cs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-link"
+              title="GitHub"
             >
-              <FaGithub size={25} />
+              <FaGithub />
             </a>
-          </li>
-        </ul>
+          </div>
+          
+          <div className="footer-info">
+            <p className="footer-text">
+              Made with <FaHeart className="heart-icon" /> by Jushtine Kylle Taculad
+            </p>
+            <p className="footer-year">© {new Date().getFullYear()}</p>
+          </div>
+        </div>
       </footer>
     </div>
   );

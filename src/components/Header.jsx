@@ -5,24 +5,21 @@ function Header() {
   const theme = React.useContext(ThemeContext);
   const isLightTheme = theme.backgroundColor === "#c9cebd";
   const themeClass = isLightTheme ? "light-theme" : "dark-theme";
+  
   return (
     <div className={`container ${themeClass}`}>
-      <header
-        className={`border-bottom lh-1 py-4 ${themeClass}`}
-        style={{
-          backgroundColor: theme.backgroundColor,
-          color: `${theme.color} !important`,
-        }}
-      >
-        <div className="row text center align-items-center">
-          <a
-            className={`blog-header-logo text-body-emphasis text-decoration-none ${themeClass}`}
-            href="/"
-            style={{ color: `${theme.color} !important` }}
-          >
-            🤸‍♂️ Beshie 🤸‍♀️ Generator 🤸
-          </a>
-          <div className="col-4 d-flex justify-content-end align-items-center"></div>
+      <header className={`app-header ${themeClass}`}>
+        <div className="header-content">
+          <div className="logo-section">
+            <h1 className="app-title">
+              <span className="emoji-decoration">🤸‍♂️</span>
+              <span className="title-text">Beshie Koh Generator</span>
+              <span className="emoji-decoration">🤸‍♀️</span>
+            </h1>
+            <p className="app-subtitle">
+              The original Filipino meme text generator! Add "beshie koh" with cartwheel emojis! 🤸
+            </p>
+          </div>
         </div>
       </header>
     </div>
